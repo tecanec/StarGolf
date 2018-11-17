@@ -9,7 +9,7 @@ public class GolfCannon : MonoBehaviour {
     static List<GolfCannon> allPlayers = new List<GolfCannon>();
     static int currentPlayerID;
     int myID;
-	bool canshoot == true;
+	bool canshoot = true;
 	float CountClones = 0;
     static int lastDoneFrame;
 	Renderer[] renderers = (Renderer[])(FindObjectsOfType(typeof(Renderer)));
@@ -41,7 +41,9 @@ public class GolfCannon : MonoBehaviour {
 
 					EndTurn();
 				}
-				else if{
+
+				else
+				{
 					Debug.Log("You can not shoot right now!");
 				}
 			}
