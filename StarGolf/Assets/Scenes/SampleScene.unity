@@ -1339,7 +1339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4313693607524890, guid: 7c5335378e33eaa4c9084ac33faf1df6, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114141361934671358, guid: 7c5335378e33eaa4c9084ac33faf1df6,
         type: 2}
@@ -1519,6 +1519,11 @@ Prefab:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114141361934671358, guid: 7c5335378e33eaa4c9084ac33faf1df6,
+        type: 2}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c5335378e33eaa4c9084ac33faf1df6, type: 2}
   m_IsPrefabAsset: 0
