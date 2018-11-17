@@ -11,8 +11,10 @@ public class GolfCannon : MonoBehaviour {
     int myID;
     static int lastDoneFrame;
 
-    public List<Transform> allObjectsInRange; // GameObjects to enclose into calculations, basically all which ever entered the sphere collider.
+    public List<Transform> allObjectsInRange;
     public List<float> relatedDistances;
+	public List<string> Balls;
+	private List<string> Ballimages;
 
     // Use this for initialization
     void Start () {
@@ -40,6 +42,11 @@ public class GolfCannon : MonoBehaviour {
                 relatedDistances[cnt] = Vector2.Distance(transform.position, allObjectsInRange[cnt].position);
                 Debug.Log(allObjectsInRange);
             }
+
+			for (int ImagesinBalls = 0; ImagesinBalls < Balls.Count; ImagesinBalls++)
+			{
+				if (Input.GetKeyDown("Mouse ScrollWheel")) ;
+			}
         }
 	}
 
