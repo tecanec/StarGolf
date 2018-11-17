@@ -11,8 +11,11 @@ public class GolfCannon : MonoBehaviour {
     int myID;
     static int lastDoneFrame;
 
-	// Use this for initialization
-	void Start () {
+    public List<Transform> allObjectsInRange; // GameObjects to enclose into calculations, basically all which ever entered the sphere collider.
+    public List<float> relatedDistances;
+
+    // Use this for initialization
+    void Start () {
         myID = allPlayers.Count;
         allPlayers.Add(this);
 	}
@@ -30,6 +33,12 @@ public class GolfCannon : MonoBehaviour {
                 Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
                     
                 EndTurn();
+            }
+
+            for (int cnt = 0; cnt < allObjectsInRange.Count; cnt++)
+            {
+                relatedDistances[cnt] = Vector2.Distance(transform.position, allObjectsInRange[cnt].position);
+                Debug.Log(allObjectsInRange);
             }
         }
 	}
