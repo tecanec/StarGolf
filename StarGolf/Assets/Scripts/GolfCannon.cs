@@ -25,7 +25,6 @@ public class GolfCannon : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		
 		if (currentPlayerID == myID && lastDoneFrame != Time.frameCount)
 		{
 			Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -33,7 +32,7 @@ public class GolfCannon : MonoBehaviour {
 
 			if (Input.GetKeyDown(KeyCode.Mouse0))
 			{
-				if (canshoot == true) ;
+				if (canshoot == true)
 				{
 					GameObject Ball = Instantiate(golfBallPrefab, transform.position, transform.rotation);
 					Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
