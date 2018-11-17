@@ -31,10 +31,7 @@ public class GolfCannon : MonoBehaviour {
                 GameObject Ball = Instantiate(golfBallPrefab, transform.position, transform.rotation);
                 Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
                 Ball.GetComponent<SpriteRenderer>().sprite = ammonitionType[0].sprite[myID];
-                for (int balls = 0; balls == ammonitionType.Length; balls++)
-                {
 
-                }
                 EndTurn();
             }
         }
