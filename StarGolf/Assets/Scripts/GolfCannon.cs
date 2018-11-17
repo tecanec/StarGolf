@@ -11,12 +11,7 @@ public class GolfCannon : MonoBehaviour {
     int myID;
     static int lastDoneFrame;
 
-    public List<Transform> allObjectsInRange;
-    public List<float> relatedDistances;
-	public List<string> Balls;
-	private List<string> Ballimages;
-
-    public BallType ammonitionType;
+    public ArrayList ammonitionType;
 
     // Use this for initialization
     void Start () {
@@ -36,20 +31,9 @@ public class GolfCannon : MonoBehaviour {
                 GameObject Ball = Instantiate(golfBallPrefab, transform.position, transform.rotation);
                 Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
                 Ball.GetComponent<SpriteRenderer>().sprite = ammonitionType.sprite[myID];
-                    
+				for (int balls = 0; balls == ammonitionType.Count; balls++) ;
                 EndTurn();
             }
-
-            for (int cnt = 0; cnt < allObjectsInRange.Count; cnt++)
-            {
-                relatedDistances[cnt] = Vector2.Distance(transform.position, allObjectsInRange[cnt].position);
-                Debug.Log(allObjectsInRange);
-            }
-
-			for (int ImagesinBalls = 0; ImagesinBalls < Balls.Count; ImagesinBalls++)
-			{
-				if (Input.GetKeyDown("Mouse ScrollWheel")) ;
-			}
         }
 	}
 

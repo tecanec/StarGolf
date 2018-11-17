@@ -55,8 +55,6 @@ MonoBehaviour:
   cam: {fileID: 0}
   golfBallPrefab: {fileID: 1030550113024108, guid: 8c3fa2d57b897894f92a18faf8ecb99e,
     type: 2}
-  allObjectsInRange: []
-  relatedDistances: []
   ammonitionType: {fileID: 11400000, guid: ae049a4b510128840999584f6a2e6643, type: 2}
 --- !u!212 &212268296335887914
 SpriteRenderer:
