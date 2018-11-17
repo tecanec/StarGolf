@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GolfCannon : MonoBehaviour {
-    public Camera cam;
-
-    public GameObject golfBallPrefab;
+	public Camera cam;
+	public GameObject golfBallPrefab;
 
 	// Use this for initialization
 	void Start () {
