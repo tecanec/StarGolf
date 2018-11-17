@@ -8,7 +8,7 @@ public class GolfCannon : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -20,6 +20,6 @@ public class GolfCannon : MonoBehaviour {
         {
             GameObject Ball = Instantiate(golfBallPrefab, transform.position, transform.rotation);
             Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
-        }
+		}
 	}
 }
