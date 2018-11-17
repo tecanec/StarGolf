@@ -41,7 +41,7 @@ public class GolfCannon : MonoBehaviour {
 					    Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
                         Ball.GetComponent<BallStuff>().Initialize(ammonitionType[0], 0, turnCount + 1);
     
-                        shootCooldown = 15;
+                        shootCooldown = 10;
 					    EndTurn();
 				    }
 				    else
