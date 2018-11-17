@@ -11,7 +11,7 @@ public class GolfCannon : MonoBehaviour {
     int myID;
     static int lastDoneFrame;
 
-    public ArrayList ammonitionType;
+    public BallType[] ammonitionType;
 
     // Use this for initialization
     void Start () {
@@ -30,8 +30,11 @@ public class GolfCannon : MonoBehaviour {
             {
                 GameObject Ball = Instantiate(golfBallPrefab, transform.position, transform.rotation);
                 Ball.GetComponent<Rigidbody2D>().velocity = transform.rotation * Vector2.up * 5;
-                Ball.GetComponent<SpriteRenderer>().sprite = ammonitionType.sprite[myID];
-				for (int balls = 0; balls == ammonitionType.Count; balls++) ;
+                Ball.GetComponent<SpriteRenderer>().sprite = ammonitionType[0].sprite[myID];
+                for (int balls = 0; balls == ammonitionType.Length; balls++)
+                {
+
+                }
                 EndTurn();
             }
         }
