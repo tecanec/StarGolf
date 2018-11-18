@@ -6,14 +6,16 @@ public class BallStuff : MonoBehaviour {
     float timeWhenFirstGrounded = -1;
     float timeWhenLastGrounded = -1;
 
-    GameObject result;
+    BallType type;
     int FromTurn;
+    int FromPlayer;
 
-    public void Initialize(BallType type, int fromPlayer, int fromTurn)
+    public void Initialize(BallType myType, int fromPlayer, int fromTurn)
     {
-        GetComponent<SpriteRenderer>().sprite = type.sprite[fromPlayer];
-        result = type.result;
+        type = myType;
         FromTurn = fromTurn;
+        FromPlayer = fromPlayer;
+        GetComponent<SpriteRenderer>().sprite = type.ballSprite[fromPlayer];
     }
 
     // Use this for initialization
@@ -40,7 +42,8 @@ public class BallStuff : MonoBehaviour {
                 GolfCannon.shootCooldown = -1;
             }
 
-            Instantiate(result, transform.position, Quaternion.Euler(0, 0, -Mathf.Atan2(collision.contacts[0].normal.x, collision.contacts[0].normal.y) * Mathf.Rad2Deg));
+            Instantiate(type.result, transform.position, Quaternion.Euler(0, 0, -Mathf.Atan2(collision.contacts[0].normal.x, collision.contacts[0].normal.y) * Mathf.Rad2Deg))
+                .GetComponent<SpriteRenderer>().sprite = type.resultSprite[FromPlayer];
             Destroy(gameObject);
         }
     }
