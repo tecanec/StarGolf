@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4850467310794330}
   - component: {fileID: 212537884364513596}
-  - component: {fileID: 95350622544115164}
   - component: {fileID: 114860130128791090}
   - component: {fileID: 58781858892185510}
+  - component: {fileID: 95708698259553978}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -58,7 +58,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8
---- !u!95 &95350622544115164
+--- !u!95 &95708698259553978
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -67,7 +67,7 @@ Animator:
   m_GameObject: {fileID: 1233328357239444}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a1375df39280c64ab1ad2f8cc80da65, type: 2}
+  m_Controller: {fileID: 9100000, guid: fd18bc708faf8184b9e97d03b19f85e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -122,7 +122,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 0e2eefdc2e652f84fb49ec84520b0c0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e2eefdc2e652f84fb49ec84520b0c0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

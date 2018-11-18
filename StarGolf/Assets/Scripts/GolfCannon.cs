@@ -32,6 +32,8 @@ public class GolfCannon : MonoBehaviour
 		{
 			if (shootCooldown <= 0)
 			{
+                //Input.mouseScrollDelta;
+
 				Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 				transform.rotation = Quaternion.Euler(0, 0, -Mathf.Atan2(mousePos.x, mousePos.y) * Mathf.Rad2Deg);
 

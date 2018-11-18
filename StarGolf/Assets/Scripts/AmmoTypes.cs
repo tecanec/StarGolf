@@ -34,7 +34,7 @@ public class AmmoTypes : MonoBehaviour {
 				selectedAmmoType++;
 		}
 
-		if (previuesSelecedWeapon != selectedAmmoType) ;
+		if (previuesSelecedWeapon != selectedAmmoType)
 		{
 			SelectAmmoType();
 		}
