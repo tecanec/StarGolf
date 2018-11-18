@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93ee14d474905f45a624fdf986a10c1, type: 3}
+  m_Name: Shields
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 21300004, guid: ad1ffe06f5ec8d14c8906432917b466a, type: 3}
+  - {fileID: 21300006, guid: ad1ffe06f5ec8d14c8906432917b466a, type: 3}
+  result: {fileID: 1919991618106318, guid: de72020409ec3ee40b71bdb7b74b8366, type: 2}
