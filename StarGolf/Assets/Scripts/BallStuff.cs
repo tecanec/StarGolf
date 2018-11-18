@@ -40,7 +40,7 @@ public class BallStuff : MonoBehaviour {
                 GolfCannon.shootCooldown = -1;
             }
 
-            Instantiate(result, transform.position, Quaternion.Euler(0, 0, Mathf.Atan2(collision.contacts[0].normal.y, -collision.contacts[0].normal.x)));
+            Instantiate(result, transform.position, Quaternion.Euler(0, 0, -Mathf.Atan2(collision.contacts[0].normal.x, collision.contacts[0].normal.y) * Mathf.Rad2Deg));
             Destroy(gameObject);
         }
     }
