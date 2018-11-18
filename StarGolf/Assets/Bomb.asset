@@ -11,7 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c93ee14d474905f45a624fdf986a10c1, type: 3}
   m_Name: Bomb
   m_EditorClassIdentifier: 
-  sprite:
+  ballSprite:
   - {fileID: 21300000, guid: ad1ffe06f5ec8d14c8906432917b466a, type: 3}
   - {fileID: 21300002, guid: ad1ffe06f5ec8d14c8906432917b466a, type: 3}
-  result: {fileID: 1919991618106318, guid: de72020409ec3ee40b71bdb7b74b8366, type: 2}
+  resultSprite:
+  - {fileID: 21300000, guid: 0e2eefdc2e652f84fb49ec84520b0c0b, type: 3}
+  - {fileID: 21300000, guid: 0e2eefdc2e652f84fb49ec84520b0c0b, type: 3}
+  result: {fileID: 1233328357239444, guid: 1545b9327a071f54086d029fcc7a5205, type: 2}

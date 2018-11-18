@@ -1091,9 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660745d944a12c3439ed13249779646f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allObjectsInRange: []
-  relatedDistances: []
-  Balls: []
+  selectedAmmoType: 0
 --- !u!1001 &1797073219
 Prefab:
   m_ObjectHideFlags: 0
